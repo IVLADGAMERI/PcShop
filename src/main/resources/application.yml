@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: PcShop
+  datasource:
+    url: jdbc:postgresql://localhost:5432/PcShop
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: 191177819102-q9hcsk34ab1hg64q7ev7l8qkntbg5h5f.apps.googleusercontent.com
+            clientSecret: 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
+        provider:
+          google:
+            authorizationUri: https://accounts.google.com/o/oauth2/auth
+            tokenUri: https://oauth2.googleapis.com/token
+            userInfoUri: https://www.googleapis.com/auth/userinfo.profile
