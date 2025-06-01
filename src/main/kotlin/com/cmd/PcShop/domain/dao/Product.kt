@@ -4,11 +4,14 @@ import jakarta.persistence.*
 
 @Entity(name = "products")
 @Inheritance(strategy = InheritanceType.JOINED)
-open class Product(
+class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    open var id: Long = 0,
+    var id: Long = 0
     @Column(nullable = false, unique = true)
-    open var name: String = "",
-    open var price: Double? = 0.0,
-)
+    var name: String = ""
+    var price: Double? = 0.0
+    @ManyToOne
+    @JoinColumn(name = "category_id", nullable = false)
+    lateinit var category: Category
+}
