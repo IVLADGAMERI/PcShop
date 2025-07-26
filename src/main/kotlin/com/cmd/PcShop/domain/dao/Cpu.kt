@@ -1,5 +1,6 @@
 package com.cmd.PcShop.domain.dao
 
+import com.cmd.PcShop.domain.type.CpuSocket
 import com.cmd.PcShop.domain.type.CpuVersion
 import com.cmd.PcShop.domain.type.RamType
 import jakarta.persistence.*
@@ -11,6 +12,8 @@ data class Cpu (
     var series: CpuSeries,
     @Column(nullable = false, unique = true)
     var model: String,
+    @Column(nullable = false)
+    var socket: CpuSocket,
     @Column(name = "base_clock", nullable = false)
     var baseClock: Int,
     @Column(name = "max_clock", nullable = false)
@@ -29,6 +32,8 @@ data class Cpu (
     var l3CacheSize: Int,
     @Column(name = "max_ram_volume", nullable = false)
     var maxRamVolume: Int,
+    @Column(name = "max_ram_clock", nullable = false)
+    var maxRamClock: Int,
     @Column(name = "ram_type", nullable = false)
     var ramType: RamType,
     @Column(name = "process_size", nullable = false)

@@ -11,6 +11,7 @@ class Product {
     @Column(nullable = false, unique = true)
     var name: String = ""
     var price: Double? = 0.0
+    var description: String? = ""
     @ManyToOne
     @JoinColumn(name = "category_id", nullable = false)
     lateinit var category: Category

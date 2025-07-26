@@ -13,8 +13,9 @@ class ProductResponseMapper (
         val id = entity.id
         val name = entity.name
         val price = entity.price
+        val description = entity.description
         val url = productUrlBuilder.build(entity)
-        return ProductResponse(id, name, price, url)
+        return ProductResponse(id, name, price, url, description)
     }
 
     fun map(entities: List<Product>) : List<ProductResponse> {

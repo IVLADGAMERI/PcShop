@@ -7,6 +7,7 @@ class CpuResponse (
     name: String,
     price: Double?,
     url: String,
+    description: String?,
     var manufacturer: String,
     var series: String,
     var model: String,
@@ -21,5 +22,7 @@ class CpuResponse (
     var maxRamVolume: Int,
     var ramType: String,
     var processSize: Int,
-    var version: String
-) : ProductResponse(id = id, name = name, price = price, url = url)
+    var version: String,
+    var socket: String,
+    var maxRamClock: Int
+) : ProductResponse(id = id, name = name, price = price, url = url, description = description)

@@ -19,6 +19,7 @@ class CpuResponseMapper (
             name = productResponse.name,
             price = productResponse.price,
             url = productResponse.url,
+            description = productResponse.description,
             manufacturer = manufacturer,
             series = series,
             version = version,
@@ -33,7 +34,9 @@ class CpuResponseMapper (
             maxRamVolume = entity.maxRamVolume,
             ramType = ramType,
             processSize = entity.processSize,
-            model = entity.model
+            model = entity.model,
+            socket = entity.socket.value,
+            maxRamClock = entity.maxRamClock
         )
     }
 

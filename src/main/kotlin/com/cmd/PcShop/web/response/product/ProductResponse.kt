@@ -4,5 +4,6 @@ open class ProductResponse (
     var id: Long,
     var name: String,
     var price: Double?,
-    var url: String
+    var url: String,
+    var description: String?
 )
