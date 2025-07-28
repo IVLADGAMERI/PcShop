@@ -3,11 +3,17 @@ package com.cmd.PcShop.domain.dao
 import com.cmd.PcShop.domain.type.SSDBusStandard
 import com.cmd.PcShop.domain.type.SSDFlashType
 import com.cmd.PcShop.domain.type.SSDFormFactor
+import jakarta.persistence.CascadeType
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
+import jakarta.persistence.JoinColumn
+import jakarta.persistence.ManyToOne
 
 @Entity(name = "SSD")
 data class SSD (
+    @ManyToOne(cascade = [CascadeType.ALL])
+    @JoinColumn(name = "manufacturer_id", nullable = false)
+    var manufacturer: SSDManufacturer,
     @Column(name = "volume_in_gb", nullable = false)
     var volumeInGb: Int,
     @Column(name = "form_factor", nullable = false)
