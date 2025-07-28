@@ -9,7 +9,7 @@ import jakarta.persistence.Entity
 @Entity(name = "SSD")
 data class SSD (
     @Column(name = "volume_in_gb", nullable = false)
-    var volumeInGb: UShort,
+    var volumeInGb: Int,
     @Column(name = "form_factor", nullable = false)
     var formFactor: SSDFormFactor,
     @Column(name = "bus_standard", nullable = false)
@@ -19,21 +19,21 @@ data class SSD (
     @Column(nullable = false)
     var controller: String,
     @Column(nullable = false)
-    var tbw: UShort,
+    var tbw: Int,
     @Column(name = "dram_volume_in_mb")
-    var dramVolumeInMb: UShort?,
+    var dramVolumeInMb: Int?,
     @Column(name = "hardware_encryption")
     var hardwareEncryption: String?,
     @Column(name = "sequential_read_speed_in_MBps", nullable = false)
-    var sequentialReadSpeedInMBps: UShort,
+    var sequentialReadSpeedInMBps: Int,
     @Column(name = "sequential_write_speed_in_MBps", nullable = false)
-    var sequentialWriteSpeedInMBps: UShort,
+    var sequentialWriteSpeedInMBps: Int,
     @Column(name = "awg_random_read_speed_in_IOps", nullable = false)
-    var awgRandomReadSpeedInIOps: UInt,
+    var awgRandomReadSpeedInIOps: Int,
     @Column(name = "awg_random_write_speed_in_IOps", nullable = false)
-    var awgRandomWriteSpeedInIOps: UInt,
+    var awgRandomWriteSpeedInIOps: Int,
     @Column(name = "mtbf_in_hours", nullable = false)
-    var MTBFInHours: UInt,
+    var MTBFInHours: Int,
     @Column(name = "thickness_in_mm", nullable = false)
     var thicknessInMm: Float,
     @Column(name = "cooling_type")

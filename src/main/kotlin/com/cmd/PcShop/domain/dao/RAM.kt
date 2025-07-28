@@ -15,11 +15,11 @@ data class RAM (
     @Column(name = "type", nullable = false)
     var type: RamType,
     @Column(nullable = false)
-    var clockInMGHz: UShort,
+    var clockInMGHz: Int,
     @Column(name = "volume_in_gb", nullable = false)
-    var volumeInGb : UShort,
+    var volumeInGb : Int,
     @Column(name = "cas_latency", nullable = false)
-    var casLatency : UByte,
+    var casLatency : Int,
     @Column(nullable = false)
     var timings : String,
     @Column(nullable = false)
