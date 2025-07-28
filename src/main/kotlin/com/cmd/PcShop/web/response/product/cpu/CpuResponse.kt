@@ -2,27 +2,27 @@ package com.cmd.PcShop.web.response.product.cpu
 
 import com.cmd.PcShop.web.response.product.ProductResponse
 
-class CpuResponse (
-    id: Long,
-    name: String,
-    price: Double?,
-    url: String,
-    description: String?,
-    var manufacturer: String,
-    var series: String,
-    var model: String,
-    var baseClock: Int,
-    var maxClock: Int,
-    var coreCount: Int,
-    var threadCount: Int,
-    var maxTdp: Int,
-    var l1CacheSize: Int,
-    var l2CacheSize: Int,
-    var l3CacheSize: Int,
-    var maxRamVolume: Int,
-    var ramType: String,
-    var processSize: Int,
-    var version: String,
-    var socket: String,
-    var maxRamClock: Int
-) : ProductResponse(id = id, name = name, price = price, url = url, description = description)
+data class CpuResponse (
+    val manufacturer: String,
+    val series: String,
+    val model: String,
+    val baseClock: Int,
+    val maxClock: Int,
+    val coreCount: Int,
+    val threadCount: Int,
+    val maxTdp: Int,
+    val l1CacheSize: Int,
+    val l2CacheSize: Int,
+    val l3CacheSize: Int,
+    val maxRamVolume: Int,
+    val ramType: String,
+    val processSize: Int,
+    val version: String,
+    val socket: String,
+    val maxRamClock: Int,
+    override val id: Long,
+    override val name: String,
+    override val price: Double?,
+    override val url: String,
+    override val description: String?
+) : ProductResponse

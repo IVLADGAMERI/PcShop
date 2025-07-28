@@ -1,9 +1,9 @@
 package com.cmd.PcShop.web.response.product
 
-open class ProductResponse (
-    var id: Long,
-    var name: String,
-    var price: Double?,
-    var url: String,
-    var description: String?
-)
+interface ProductResponse {
+    val id: Long
+    val name: String
+    val price: Double?
+    val url: String
+    val description: String?
+}

@@ -2,24 +2,25 @@ package com.cmd.PcShop.web.response.mapper
 
 import com.cmd.PcShop.domain.dao.Cpu
 import com.cmd.PcShop.web.response.product.cpu.CpuResponse
+import com.cmd.PcShop.web.url.product.ProductUrlBuilder
 import org.springframework.stereotype.Component
 
 @Component
 class CpuResponseMapper (
-    private var productResponseMapper: ProductResponseMapper
+    private var productUrlBuilder: ProductUrlBuilder
 ) {
     fun map(entity: Cpu) : CpuResponse {
-        val productResponse = productResponseMapper.map(entity)
         val manufacturer = entity.series.manufacturer.name
         val series = entity.series.name
         val version = entity.version.value
         val ramType = entity.ramType.value
+        val url = productUrlBuilder.build(entity)
         return CpuResponse(
-            id = productResponse.id,
-            name = productResponse.name,
-            price = productResponse.price,
-            url = productResponse.url,
-            description = productResponse.description,
+            id = entity.id,
+            name = entity.name,
+            price = entity.price,
+            url = url,
+            description = entity.description,
             manufacturer = manufacturer,
             series = series,
             version = version,
