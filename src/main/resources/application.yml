@@ -1,7 +1,7 @@
 web:
   api:
     url:
-      products: "http://localhost:8080/api/products"
+      products: "http://localhost:8080/api/products/"
 spring:
   application:
     name: PcShop
