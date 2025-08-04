@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service
 import org.springframework.validation.annotation.Validated
 
 @Service
+@Validated
 class RamService (
     private val ramRepository: RAMRepository,
     private val pagedDataResponseMapper: PagedDataResponseMapper<RamResponse>,
@@ -25,5 +26,10 @@ class RamService (
         val entityPage = ramRepository.findAll(pageRequest)
         val responsePage = entityPage.map{ramResponseMapper.map(it)}
         return pagedDataResponseMapper.map(responsePage)
+    }
+
+    fun getById(@PositiveOrZero id: Long) : RamResponse {
+        val entity = ramRepository.findById(id).orElseThrow{ EntityNotFoundException() }
+        return ramResponseMapper.map(entity)
     }
 }

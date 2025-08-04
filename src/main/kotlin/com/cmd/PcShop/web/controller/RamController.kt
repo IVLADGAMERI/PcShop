@@ -6,6 +6,7 @@ import com.cmd.PcShop.web.response.PagedDataResponse
 import com.cmd.PcShop.web.response.product.ram.RamResponse
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.ModelAttribute
+import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
@@ -17,5 +18,10 @@ class RamController (
     @GetMapping
     fun getPaged(@ModelAttribute pagedDataRequest: PagedDataRequest) : PagedDataResponse<RamResponse> {
         return ramService.getPaged(pagedDataRequest)
+    }
+
+    @GetMapping("/{id}")
+    fun getById(@PathVariable id: Long) : RamResponse {
+        return ramService.getById(id)
     }
 }
