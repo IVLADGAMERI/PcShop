@@ -3,7 +3,7 @@ package com.cmd.PcShop.web.controller
 import com.cmd.PcShop.service.RamService
 import com.cmd.PcShop.web.request.PagedDataRequest
 import com.cmd.PcShop.web.response.PagedDataResponse
-import com.cmd.PcShop.web.response.product.RamResponse
+import com.cmd.PcShop.web.response.product.ram.RamResponse
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.ModelAttribute
 import org.springframework.web.bind.annotation.RequestMapping
