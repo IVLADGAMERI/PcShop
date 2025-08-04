@@ -1,7 +1,7 @@
 package com.cmd.PcShop.web.response.mapper
 
-import com.cmd.PcShop.domain.dao.RAM
-import com.cmd.PcShop.web.response.product.RamResponse
+import com.cmd.PcShop.domain.dao.product.ram.RAM
+import com.cmd.PcShop.web.response.product.ram.RamResponse
 import com.cmd.PcShop.web.url.product.ProductUrlBuilder
 import org.springframework.stereotype.Component
 

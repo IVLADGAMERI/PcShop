@@ -5,7 +5,9 @@ import com.cmd.PcShop.web.request.PagedDataRequest
 import com.cmd.PcShop.web.response.PagedDataResponse
 import com.cmd.PcShop.web.response.mapper.RamResponseMapper
 import com.cmd.PcShop.web.response.mapper.PagedDataResponseMapper
-import com.cmd.PcShop.web.response.product.RamResponse
+import com.cmd.PcShop.web.response.product.ram.RamResponse
+import jakarta.persistence.EntityNotFoundException
+import jakarta.validation.constraints.PositiveOrZero
 import org.springframework.data.domain.PageRequest
 import org.springframework.data.domain.Sort
 import org.springframework.stereotype.Service

@@ -1,4 +1,6 @@
-package com.cmd.PcShop.web.response.product
+package com.cmd.PcShop.web.response.product.ram
+
+import com.cmd.PcShop.web.response.product.ProductResponse
 
 data class RamResponse (
     val manufacturer: String,

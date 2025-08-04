@@ -1,6 +1,6 @@
 package com.cmd.PcShop.domain.repository
 
-import com.cmd.PcShop.domain.dao.SSD
+import com.cmd.PcShop.domain.dao.product.ssd.SSD
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository
 

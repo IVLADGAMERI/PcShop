@@ -1,8 +1,8 @@
 package com.cmd.PcShop.web.url.product
 
-import com.cmd.PcShop.domain.dao.Cpu
-import com.cmd.PcShop.domain.dao.Product
-import com.cmd.PcShop.domain.dao.RAM
+import com.cmd.PcShop.domain.dao.product.cpu.Cpu
+import com.cmd.PcShop.domain.dao.product.Product
+import com.cmd.PcShop.domain.dao.product.ram.RAM
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.stereotype.Component
 import org.springframework.web.util.UriComponentsBuilder
