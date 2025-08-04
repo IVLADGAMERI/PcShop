@@ -1,5 +1,6 @@
-package com.cmd.PcShop.domain.dao
+package com.cmd.PcShop.domain.dao.product.ram
 
+import com.cmd.PcShop.domain.dao.product.Product
 import com.cmd.PcShop.domain.type.RamType
 import jakarta.persistence.CascadeType
 import jakarta.persistence.Column
@@ -14,7 +15,7 @@ data class RAM (
     var manufacturer: RamManufacturer,
     @Column(name = "type", nullable = false)
     var type: RamType,
-    @Column(nullable = false)
+    @Column(name = "clock_in_MGHz", nullable = false)
     var clockInMGHz: Int,
     @Column(name = "volume_in_gb", nullable = false)
     var volumeInGb : Int,

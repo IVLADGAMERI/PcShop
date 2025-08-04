@@ -1,4 +1,4 @@
-package com.cmd.PcShop.domain.dao
+package com.cmd.PcShop.domain.dao.product.ssd
 
 import jakarta.persistence.Column
 import jakarta.persistence.Entity

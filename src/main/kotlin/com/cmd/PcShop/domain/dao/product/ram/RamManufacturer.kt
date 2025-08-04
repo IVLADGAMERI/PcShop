@@ -1,4 +1,4 @@
-package com.cmd.PcShop.domain.dao
+package com.cmd.PcShop.domain.dao.product.ram
 
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
@@ -6,11 +6,11 @@ import jakarta.persistence.GeneratedValue
 import jakarta.persistence.GenerationType
 import jakarta.persistence.Id
 
-@Entity(name = "categories")
-data class Category (
+@Entity(name = "ram_manufacturers")
+data class RamManufacturer (
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Int,
-    @Column(unique = true, length = 32, nullable = false)
+    @Column(nullable = false, unique = true, length = 10)
     var name: String
 )

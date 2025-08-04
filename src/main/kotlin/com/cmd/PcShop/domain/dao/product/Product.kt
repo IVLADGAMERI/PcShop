@@ -1,4 +1,4 @@
-package com.cmd.PcShop.domain.dao
+package com.cmd.PcShop.domain.dao.product
 
 import jakarta.persistence.*
 
