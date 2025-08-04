@@ -1,6 +1,6 @@
 package com.cmd.PcShop.web.response.mapper
 
-import com.cmd.PcShop.domain.dao.Cpu
+import com.cmd.PcShop.domain.dao.product.cpu.Cpu
 import com.cmd.PcShop.web.response.product.cpu.CpuResponse
 import com.cmd.PcShop.web.url.product.ProductUrlBuilder
 import org.springframework.stereotype.Component
@@ -36,7 +36,7 @@ class CpuResponseMapper (
             ramType = ramType,
             processSize = entity.processSize,
             model = entity.model,
-            socket = entity.socket.value,
+            socket = entity.series.socket.name,
             maxRamClock = entity.maxRamClock
         )
     }

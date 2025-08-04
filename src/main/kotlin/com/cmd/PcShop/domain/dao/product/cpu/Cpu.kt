@@ -1,6 +1,6 @@
-package com.cmd.PcShop.domain.dao
+package com.cmd.PcShop.domain.dao.product.cpu
 
-import com.cmd.PcShop.domain.type.CpuSocket
+import com.cmd.PcShop.domain.dao.product.Product
 import com.cmd.PcShop.domain.type.CpuVersion
 import com.cmd.PcShop.domain.type.RamType
 import jakarta.persistence.*
@@ -12,8 +12,6 @@ data class Cpu (
     var series: CpuSeries,
     @Column(nullable = false, unique = true)
     var model: String,
-    @Column(nullable = false)
-    var socket: CpuSocket,
     @Column(name = "base_clock", nullable = false)
     var baseClock: Int,
     @Column(name = "max_clock", nullable = false)

@@ -1,6 +1,7 @@
-package com.cmd.PcShop.domain.dao
+package com.cmd.PcShop.domain.dao.product.cpu
 
 import jakarta.persistence.*
+
 
 @Entity(name = "cpu_manufacturers")
 data class CpuManufacturer (
