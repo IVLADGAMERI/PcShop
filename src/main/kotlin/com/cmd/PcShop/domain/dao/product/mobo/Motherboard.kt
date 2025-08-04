@@ -1,4 +1,4 @@
-package com.cmd.PcShop.domain.dao
+package com.cmd.PcShop.domain.dao.product.mobo
 
 import com.cmd.PcShop.domain.type.Chipset
 import com.cmd.PcShop.domain.type.CpuSocket
