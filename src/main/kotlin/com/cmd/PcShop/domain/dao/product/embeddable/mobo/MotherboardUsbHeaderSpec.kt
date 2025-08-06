@@ -1,4 +1,4 @@
-package com.cmd.PcShop.domain.dao.product.embeddable
+package com.cmd.PcShop.domain.dao.product.embeddable.mobo
 
 import jakarta.persistence.Column
 import jakarta.persistence.Embeddable
