@@ -5,12 +5,12 @@ import jakarta.persistence.Embeddable
 
 @Embeddable
 class MotherboardDriveSpec (
-    @Column(name = "m2_number")
-    var m2Number: Int?,
-    @Column(name = "sata_3_number")
-    var sata3Number: Int?,
-    @Column(name = "sata_2_number")
-    var sata2Number: Int?,
+    @Column(name = "m2_number", nullable = false)
+    var m2Number: Int,
+    @Column(name = "sata_3_number", nullable = false)
+    var sata3Number: Int,
+    @Column(name = "sata_2_number", nullable = false)
+    var sata2Number: Int,
     @Column(name = "raid_info", length = 32)
     var raidInfo: String?,
 )
