@@ -10,7 +10,7 @@ class VideoInterfaceSpec (
     @Column(name = "display_port_number", nullable = false)
     var displayPortNumber: Int,
     @Column(name = "display_port_version")
-    var displayPortVersion: DisplayPortVersion,
+    var displayPortVersion: DisplayPortVersion?,
     @Column(name = "mini_display_port_number", nullable = false)
     var miniDisplayPortNumber: Int,
     @Column(name = "vga_number", nullable = false)
@@ -20,5 +20,5 @@ class VideoInterfaceSpec (
     @Column(name = "hdmi_number", nullable = false)
     var hdmiNumber: Int,
     @Column(name = "hdmi_version")
-    var hdmiVersion: HdmiVersion,
+    var hdmiVersion: HdmiVersion?,
 )

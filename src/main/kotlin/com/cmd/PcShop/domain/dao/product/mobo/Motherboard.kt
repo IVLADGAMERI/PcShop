@@ -63,5 +63,5 @@ class Motherboard (
     @Embedded
     var backlightHeaderSpec: MotherboardBacklightHeaderSpec,
     @Column(name = "headers_additional_info", length = 512)
-    var headersAdditionalInfo: String
+    var headersAdditionalInfo: String?
 ) : Product()
