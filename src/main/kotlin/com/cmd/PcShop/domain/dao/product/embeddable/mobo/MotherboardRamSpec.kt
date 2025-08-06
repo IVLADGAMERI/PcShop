@@ -1,4 +1,4 @@
-package com.cmd.PcShop.domain.dao.product.embeddable
+package com.cmd.PcShop.domain.dao.product.embeddable.mobo
 
 import com.cmd.PcShop.domain.type.MotherboardRamType
 import com.cmd.PcShop.domain.type.RamChannelMode

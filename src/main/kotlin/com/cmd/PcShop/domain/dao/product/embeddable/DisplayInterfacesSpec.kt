@@ -6,7 +6,7 @@ import jakarta.persistence.Column
 import jakarta.persistence.Embeddable
 
 @Embeddable
-class VideoInterfaceSpec (
+class DisplayInterfacesSpec (
     @Column(name = "display_port_number", nullable = false)
     var displayPortNumber: Int,
     @Column(name = "display_port_version")

@@ -3,6 +3,7 @@ package com.cmd.PcShop.domain.dao.product.mobo
 import com.cmd.PcShop.domain.dao.product.Product
 import com.cmd.PcShop.domain.dao.product.cpu.CpuSocket
 import com.cmd.PcShop.domain.dao.product.embeddable.*
+import com.cmd.PcShop.domain.dao.product.embeddable.mobo.*
 import com.cmd.PcShop.domain.type.*
 import jakarta.persistence.CascadeType
 import jakarta.persistence.Column
@@ -55,7 +56,7 @@ class Motherboard (
     @Column(name = "ps2_number", nullable = false)
     var ps2Number: Int,
     @Embedded
-    var videoInterfaceSpec: VideoInterfaceSpec,
+    var displayInterfacesSpec: DisplayInterfacesSpec,
     @Embedded
     var usbHeaderSpec: MotherboardUsbHeaderSpec,
     @Embedded
