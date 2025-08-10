@@ -1,13 +1,16 @@
 package com.cmd.PcShop.domain.dao.product.embeddable.fan
 
+import com.cmd.PcShop.domain.dao.product.cooling.FanManufacturer
 import com.cmd.PcShop.domain.type.FanBacklightType
 import com.cmd.PcShop.domain.type.FanConnectorType
 import com.cmd.PcShop.domain.type.FanBearingType
-import jakarta.persistence.Column
-import jakarta.persistence.Embeddable
+import jakarta.persistence.*
 
 @Embeddable
 class FanSpec (
+    @ManyToOne(cascade = [CascadeType.ALL])
+    @JoinColumn(name = "manufacturer_id", nullable = false)
+    var manufacturer: FanManufacturer,
     @Column(nullable = false, length = 16)
     var color: String,
     @Column(name = "diameter_in_mm", nullable = false)
