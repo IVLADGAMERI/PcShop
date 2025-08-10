@@ -1,5 +1,6 @@
 package com.cmd.PcShop.domain.dao.product
 
+import com.cmd.PcShop.domain.dao.product.embeddable.PhysicalSpec
 import jakarta.persistence.*
 
 @Entity(name = "products")
@@ -11,8 +12,10 @@ class Product {
     @Column(nullable = false, unique = true)
     var name: String = ""
     var price: Double? = 0.0
-    var description: String? = ""
+    var description: String? = null
     @ManyToOne
     @JoinColumn(name = "category_id", nullable = false)
     lateinit var category: Category
+    @Embedded
+    var physicalSpec: PhysicalSpec? = null
 }
