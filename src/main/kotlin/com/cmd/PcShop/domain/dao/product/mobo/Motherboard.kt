@@ -51,8 +51,8 @@ class Motherboard (
     var usbSpec: MotherboardUsbSpec,
     @Column(name = "spdif_number", nullable = false)
     var spdifNumber: Int,
-    @Column(name = "jack_35_number", nullable = false)
-    var jack35Number: Int,
+    @Embedded
+    var threePointFiveConnectorsSpec: ThreePointFiveConnectorsSpec,
     @Column(name = "ps2_number", nullable = false)
     var ps2Number: Int,
     @Embedded
