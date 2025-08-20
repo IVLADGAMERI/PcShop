@@ -1,6 +1,6 @@
-package com.cmd.PcShop.domain.dao.product.psu
+package com.cmd.PcShop.domain.dao.product.entity.psu
 
-import com.cmd.PcShop.domain.dao.product.Product
+import com.cmd.PcShop.domain.dao.product.entity.Product
 import com.cmd.PcShop.domain.type.*
 import jakarta.persistence.CascadeType
 import jakarta.persistence.Column

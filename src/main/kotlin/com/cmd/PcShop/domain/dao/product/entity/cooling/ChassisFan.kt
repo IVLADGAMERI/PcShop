@@ -1,6 +1,6 @@
-package com.cmd.PcShop.domain.dao.product.cooling
+package com.cmd.PcShop.domain.dao.product.entity.cooling
 
-import com.cmd.PcShop.domain.dao.product.Product
+import com.cmd.PcShop.domain.dao.product.entity.Product
 import com.cmd.PcShop.domain.dao.product.embeddable.fan.FanSpec
 import com.cmd.PcShop.domain.type.FanAirFlowDirection
 import jakarta.persistence.Column

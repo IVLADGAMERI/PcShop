@@ -1,4 +1,4 @@
-package com.cmd.PcShop.domain.dao.product.cpu
+package com.cmd.PcShop.domain.dao.product.entity.mobo
 
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
@@ -6,8 +6,8 @@ import jakarta.persistence.GeneratedValue
 import jakarta.persistence.GenerationType
 import jakarta.persistence.Id
 
-@Entity(name = "cpu_generations")
-class CpuGeneration (
+@Entity(name = "motherboards_manufacturers")
+class MotherboardManufacturer (
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Int,

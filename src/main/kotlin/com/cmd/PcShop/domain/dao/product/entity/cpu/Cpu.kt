@@ -1,6 +1,6 @@
-package com.cmd.PcShop.domain.dao.product.cpu
+package com.cmd.PcShop.domain.dao.product.entity.cpu
 
-import com.cmd.PcShop.domain.dao.product.Product
+import com.cmd.PcShop.domain.dao.product.entity.Product
 import com.cmd.PcShop.domain.type.CpuVersion
 import com.cmd.PcShop.domain.type.RamType
 import jakarta.persistence.*

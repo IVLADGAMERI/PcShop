@@ -1,4 +1,4 @@
-package com.cmd.PcShop.domain.dao.product.cpu
+package com.cmd.PcShop.domain.dao.product.entity.cpu
 
 import jakarta.persistence.CascadeType
 import jakarta.persistence.Column

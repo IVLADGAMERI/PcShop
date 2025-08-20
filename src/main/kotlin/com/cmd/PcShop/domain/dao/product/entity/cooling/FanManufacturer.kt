@@ -1,4 +1,4 @@
-package com.cmd.PcShop.domain.dao.product.cooling
+package com.cmd.PcShop.domain.dao.product.entity.cooling
 
 import jakarta.persistence.*
 

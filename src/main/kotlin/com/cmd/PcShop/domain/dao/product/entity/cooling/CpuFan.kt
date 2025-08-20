@@ -1,7 +1,7 @@
-package com.cmd.PcShop.domain.dao.product.cooling
+package com.cmd.PcShop.domain.dao.product.entity.cooling
 
-import com.cmd.PcShop.domain.dao.product.Product
-import com.cmd.PcShop.domain.dao.product.cpu.CpuSocket
+import com.cmd.PcShop.domain.dao.product.entity.Product
+import com.cmd.PcShop.domain.dao.product.entity.cpu.CpuSocket
 import com.cmd.PcShop.domain.dao.product.embeddable.fan.FanSpec
 import jakarta.persistence.Column
 import jakarta.persistence.Embedded

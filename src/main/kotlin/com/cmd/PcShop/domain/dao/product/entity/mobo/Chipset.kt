@@ -1,7 +1,7 @@
-package com.cmd.PcShop.domain.dao.product.mobo
+package com.cmd.PcShop.domain.dao.product.entity.mobo
 
-import com.cmd.PcShop.domain.dao.product.cpu.CpuGeneration
-import com.cmd.PcShop.domain.dao.product.cpu.CpuSocket
+import com.cmd.PcShop.domain.dao.product.entity.cpu.CpuGeneration
+import com.cmd.PcShop.domain.dao.product.entity.cpu.CpuSocket
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
 import jakarta.persistence.GeneratedValue

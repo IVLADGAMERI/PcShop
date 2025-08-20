@@ -1,6 +1,6 @@
 package com.cmd.PcShop.domain.dao.product.embeddable.fan
 
-import com.cmd.PcShop.domain.dao.product.cooling.FanManufacturer
+import com.cmd.PcShop.domain.dao.product.entity.cooling.FanManufacturer
 import com.cmd.PcShop.domain.type.FanBacklightType
 import com.cmd.PcShop.domain.type.FanConnectorType
 import com.cmd.PcShop.domain.type.FanBearingType
@@ -32,4 +32,4 @@ class FanSpec (
     @Column(name = "backlight_type", nullable = false)
     var backlightType: FanBacklightType,
 
-)
+    )

@@ -1,6 +1,6 @@
 package com.cmd.PcShop.web.controller
 
-import com.cmd.PcShop.domain.dao.product.Category
+import com.cmd.PcShop.domain.dao.product.entity.Category
 import com.cmd.PcShop.service.CategoryService
 import com.cmd.PcShop.web.request.PagedDataRequest
 import com.cmd.PcShop.web.response.PagedDataResponse

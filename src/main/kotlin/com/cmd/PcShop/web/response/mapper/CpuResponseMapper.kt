@@ -1,6 +1,6 @@
 package com.cmd.PcShop.web.response.mapper
 
-import com.cmd.PcShop.domain.dao.product.cpu.Cpu
+import com.cmd.PcShop.domain.dao.product.entity.cpu.Cpu
 import com.cmd.PcShop.web.response.product.cpu.CpuResponse
 import com.cmd.PcShop.web.url.product.ProductUrlBuilder
 import org.springframework.stereotype.Component

@@ -1,6 +1,6 @@
-package com.cmd.PcShop.domain.dao.product.ssd
+package com.cmd.PcShop.domain.dao.product.entity.ssd
 
-import com.cmd.PcShop.domain.dao.product.Product
+import com.cmd.PcShop.domain.dao.product.entity.Product
 import com.cmd.PcShop.domain.type.SSDBusStandard
 import com.cmd.PcShop.domain.type.SSDFlashType
 import com.cmd.PcShop.domain.type.SSDFormFactor

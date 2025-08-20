@@ -1,4 +1,4 @@
-package com.cmd.PcShop.domain.dao.product
+package com.cmd.PcShop.domain.dao.product.entity
 
 import com.cmd.PcShop.domain.dao.product.embeddable.PhysicalSpec
 import jakarta.persistence.*

@@ -1,7 +1,7 @@
-package com.cmd.PcShop.domain.dao.product.mobo
+package com.cmd.PcShop.domain.dao.product.entity.mobo
 
-import com.cmd.PcShop.domain.dao.product.Product
-import com.cmd.PcShop.domain.dao.product.cpu.CpuSocket
+import com.cmd.PcShop.domain.dao.product.entity.Product
+import com.cmd.PcShop.domain.dao.product.entity.cpu.CpuSocket
 import com.cmd.PcShop.domain.dao.product.embeddable.*
 import com.cmd.PcShop.domain.dao.product.embeddable.mobo.*
 import com.cmd.PcShop.domain.type.*
