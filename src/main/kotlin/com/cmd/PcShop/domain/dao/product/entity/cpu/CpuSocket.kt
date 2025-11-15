@@ -18,5 +18,5 @@ class CpuSocket (
     var name: String,
     @OneToMany(cascade = [CascadeType.ALL])
     @JoinColumn(name = "socket_id", nullable = false)
-    var generations: Set<CpuGeneration> = emptySet()
+    var generations: HashSet<CpuGeneration>
 )

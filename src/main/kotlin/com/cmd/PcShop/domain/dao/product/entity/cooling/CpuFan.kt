@@ -27,5 +27,5 @@ class CpuFan (
         name = "cpu_fans_sockets",
         joinColumns = [JoinColumn(name = "fan_id")],
         inverseJoinColumns = [JoinColumn(name = "socket_id")])
-    var supportedSockets: Set<CpuSocket>,
+    var supportedSockets: ArrayList<CpuSocket>
 ) : Product()

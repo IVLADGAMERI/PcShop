@@ -22,11 +22,11 @@ class Chipset(
     @ManyToOne
     @JoinColumn(name = "socket_id")
     var socket: CpuSocket,
-    @ManyToMany
+    @ManyToMany(targetEntity = CpuGeneration::class)
     @JoinTable(
         name = "chipset_cpu_generation_support",
         joinColumns = [JoinColumn(name = "chipset_id")],
-        inverseJoinColumns = [JoinColumn(name = "generation_id")]
+        inverseJoinColumns = [JoinColumn(name = "generation_id")],
     )
-    var supportedCpuGenerations: Set<CpuGeneration> = emptySet()
+    var supportedCpuGenerations: HashSet<CpuGeneration>
 )
