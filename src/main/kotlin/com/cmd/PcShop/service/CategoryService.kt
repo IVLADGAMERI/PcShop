@@ -1,6 +1,6 @@
 package com.cmd.PcShop.service
 
-import com.cmd.PcShop.domain.dao.product.entity.Category
+import com.cmd.PcShop.domain.dao.product.entity.product.Category
 import com.cmd.PcShop.domain.repository.CategoryRepository
 import com.cmd.PcShop.web.request.PagedDataRequest
 import com.cmd.PcShop.web.response.PagedDataResponse

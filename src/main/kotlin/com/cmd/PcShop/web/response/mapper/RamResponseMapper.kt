@@ -1,6 +1,6 @@
 package com.cmd.PcShop.web.response.mapper
 
-import com.cmd.PcShop.domain.dao.product.entity.ram.RAM
+import com.cmd.PcShop.domain.dao.product.entity.product.pc.component.ram.RAM
 import com.cmd.PcShop.web.response.product.ram.RamResponse
 import com.cmd.PcShop.web.url.product.ProductUrlBuilder
 import org.springframework.stereotype.Component
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component
 class RamResponseMapper (
     private var productUrlBuilder: ProductUrlBuilder
 ) {
-    fun map(entity: RAM) : RamResponse {
+    fun map(entity: com.cmd.PcShop.domain.dao.product.entity.product.pc.component.ram.RAM) : RamResponse {
         val manufacturer = entity.manufacturer.name
         val type = entity.type.value
         val url = productUrlBuilder.build(entity)

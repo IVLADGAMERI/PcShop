@@ -22,7 +22,7 @@ class WebSecurityConfig {
     fun securityFilterChain(httpSecurity: HttpSecurity): SecurityFilterChain {
         httpSecurity
             .authorizeHttpRequests { requests ->
-                requests.anyRequest().authenticated()
+                requests.anyRequest().permitAll()
             }
             .oauth2Login { login: OAuth2LoginConfigurer<HttpSecurity?> ->
                 login.defaultSuccessUrl("http://localhost:8080", true)
@@ -41,9 +41,9 @@ class WebSecurityConfig {
         val configuration = CorsConfiguration()
         configuration.allowedOrigins = listOf("http://localhost:3000")
         configuration.allowedMethods =
-            mutableListOf("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS")
+            listOf("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS")
         configuration.allowedHeaders =
-            mutableListOf("authorization", "content-type", "x-auth-token")
+            listOf("authorization", "content-type", "x-auth-token")
         configuration.exposedHeaders = listOf("x-auth-token")
         configuration.allowCredentials = true
         val source = UrlBasedCorsConfigurationSource()

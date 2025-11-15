@@ -1,6 +1,6 @@
 package com.cmd.PcShop.web.response.mapper
 
-import com.cmd.PcShop.domain.dao.product.entity.cpu.Cpu
+import com.cmd.PcShop.domain.dao.product.entity.product.pc.component.cpu.Cpu
 import com.cmd.PcShop.web.response.product.cpu.CpuResponse
 import com.cmd.PcShop.web.url.product.ProductUrlBuilder
 import org.springframework.stereotype.Component
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component
 class CpuResponseMapper (
     private var productUrlBuilder: ProductUrlBuilder
 ) {
-    fun map(entity: Cpu) : CpuResponse {
+    fun map(entity: com.cmd.PcShop.domain.dao.product.entity.product.pc.component.cpu.Cpu) : CpuResponse {
         val manufacturer = entity.series.manufacturer.name
         val series = entity.series.name
         val version = entity.version.value
@@ -41,7 +41,7 @@ class CpuResponseMapper (
         )
     }
 
-    fun map(entities: List<Cpu>) : List<CpuResponse> {
+    fun map(entities: List<com.cmd.PcShop.domain.dao.product.entity.product.pc.component.cpu.Cpu>) : List<CpuResponse> {
         return entities.map { this.map(it) }
     }
 }

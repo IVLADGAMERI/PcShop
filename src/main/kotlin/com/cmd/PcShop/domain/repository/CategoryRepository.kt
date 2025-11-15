@@ -1,6 +1,6 @@
 package com.cmd.PcShop.domain.repository
 
-import com.cmd.PcShop.domain.dao.product.entity.Category
+import com.cmd.PcShop.domain.dao.product.entity.product.Category
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository
 

@@ -1,6 +1,6 @@
 package com.cmd.PcShop.domain.dao.product.embeddable.fan
 
-import com.cmd.PcShop.domain.dao.product.entity.cooling.FanManufacturer
+import com.cmd.PcShop.domain.dao.product.entity.product.pc.component.cooling.FanManufacturer
 import com.cmd.PcShop.domain.type.FanBacklightType
 import com.cmd.PcShop.domain.type.FanConnectorType
 import com.cmd.PcShop.domain.type.FanBearingType
@@ -10,7 +10,7 @@ import jakarta.persistence.*
 class FanSpec (
     @ManyToOne(cascade = [CascadeType.ALL])
     @JoinColumn(name = "manufacturer_id", nullable = false)
-    var manufacturer: FanManufacturer,
+    var manufacturer: com.cmd.PcShop.domain.dao.product.entity.product.pc.component.cooling.FanManufacturer,
     @Column(nullable = false, length = 16)
     var color: String,
     @Column(name = "diameter_in_mm", nullable = false)
