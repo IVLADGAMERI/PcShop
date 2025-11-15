@@ -11,7 +11,7 @@ import jakarta.persistence.Entity
 import jakarta.persistence.JoinColumn
 import jakarta.persistence.UniqueConstraint
 
-@Entity
+@Entity(name = "pc_cases")
 class Case (
     @Column(name = "form_factor", nullable = false)
     var formFactor: CaseFormFactor,
@@ -22,7 +22,7 @@ class Case (
         uniqueConstraints = [UniqueConstraint(columnNames = ["case_id", "mobo_form_factor"])]
     )
     @Column(name = "mobo_form_factor", nullable = false)
-    var supportedFormFactors: Set<MotherboardFormFactor> = emptySet(),
+    var supportedFormFactors: HashSet<MotherboardFormFactor>,
     @Column(name = "max_cpu_cooler_height_in_mm", nullable = false)
     var maxCpuCoolerHeightInMm: Int,
     @Column(name = "max_gpu_length_in_mm", nullable = false)
